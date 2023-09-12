@@ -1,3 +1,4 @@
+require('dotenv').config()
 // Import Express =>
 const express = require('express')
 const cors = require('cors');
@@ -6,8 +7,7 @@ const cors = require('cors');
 const app = express() 
 
 // above 1024 =>
-const port = 3000 
-
+const port = process.env.PORT;
 const fruits = require('./fruits.json')
 
 // Middleware
